@@ -7,7 +7,7 @@ This project employs topic modelling using BERTopic to analyse heatwave news art
 * `config.yaml`: A configuration file that stores hyperparameters for each country's BERTopic model.
 * `main_script.py`: Main script that loads configurations, handles preprocessing and runs BERTopic models for each country.
 * `model/`: Directory where country specific model is saved.
-* `utils/preprocess.py`: Contains helper functions for data loading and preprocessing for country specific preprocessing steps.
+* `preprocess.py`: Contains helper functions for data loading and preprocessing for country specific preprocessing steps.
 * `requirements.txt`: Lists required Python libraries and packages for the project.
 
 # Preprocessing variations
