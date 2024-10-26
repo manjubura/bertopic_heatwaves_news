@@ -1,0 +1,17 @@
+# Minimum Python version required
+python_version>=3.12.4
+
+# Required packages
+pandas==2.2.2
+BERTopic==0.16.3
+nltk==3.8.1
+seaborn==0.13.2
+matplotlib==3.8.4
+numpy==1.26.4
+networkx==3.2.1
+python-louvain==0.16
+gravis==0.1.0
+
+# Notes:
+# - `os` and `ast` are part of Python’s standard library, so no separate installation is needed.
+
