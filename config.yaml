@@ -21,4 +21,93 @@ India:
     n_gram_range: [1,1]
     min_topic_size: 10
     nr_topics: null
-    
+Mexico: 
+  embedding_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  umap_params:
+    n_neighbors: 15
+    n_components: 5
+    min_dist: 0.0
+    metric: "cosine"
+  hdbscan_params:
+    min_cluster_size: 10
+    metric: "euclidean"
+    cluster_selection_method: "eom"
+  vectorizer_params:
+    tokenizer: "nltk_word_tokenize"
+    stop_words: "spanish_english" # combine stopwords
+    ngram_range: [1,1]
+  topic_representation_param: 
+    diversity: 0.3 # parameter for MaximalMarginalRelevance
+  topic_params:
+    language: "multilingual"
+    top_n_words: 10
+    n_gram_range: [1,1]
+    min_topic_size: 10
+    nr_topics: null    
+Nepal: 
+  embedding_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  umap_params:
+    n_neighbors: 15
+    n_components: 5
+    min_dist: 0.0
+    metric: "cosine"
+  hdbscan_params:
+    min_cluster_size: 10
+    metric: "euclidean"
+    cluster_selection_method: "eom"
+  vectorizer_params:
+    tokenizer: "nltk_word_tokenize"
+    stop_words: "nepali_english" # combine stopwords
+    ngram_range: [1,1]
+  topic_representation_param: 
+    diversity: 0.3 # parameter for MaximalMarginalRelevance
+  topic_params:
+    language: "multilingual"
+    top_n_words: 10
+    n_gram_range: [1,1]
+    min_topic_size: 10
+    nr_topics: null 
+UK: 
+  embedding_model: "all-MiniLM-L6-v2"
+  umap_params:
+    n_neighbors: 15
+    n_components: 5
+    min_dist: 0.0
+    metric: "cosine"
+  hdbscan_params:
+    min_cluster_size: 50
+    metric: "euclidean"
+    cluster_selection_method: "eom"
+  vectorizer_params:
+    stop_words: "english" 
+    ngram_range: [1,1]
+  topic_representation_param: 
+    diversity: 0.3 # parameter for MaximalMarginalRelevance
+  topic_params:
+    language: "english"
+    top_n_words: 10
+    n_gram_range: [1,1]
+    min_topic_size: 50
+    nr_topics: null
+ US: 
+  embedding_model: "all-MiniLM-L6-v2"
+  umap_params:
+    n_neighbors: 15
+    n_components: 5
+    min_dist: 0.0
+    metric: "cosine"
+  hdbscan_params:
+    min_cluster_size: 10
+    metric: "euclidean"
+    cluster_selection_method: "eom"
+  vectorizer_params:
+    stop_words: "english" 
+    ngram_range: [1,1]
+  topic_representation_param: 
+    diversity: 0.3 # parameter for MaximalMarginalRelevance
+  topic_params:
+    language: "english"
+    top_n_words: 10
+    n_gram_range: [1,1]
+    min_topic_size: 10
+    nr_topics: null 
