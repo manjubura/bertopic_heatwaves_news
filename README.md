@@ -13,9 +13,9 @@ This project employs topic modelling using BERTopic to analyse heatwave news art
 # Preprocessing variations
 
 Different preprocessing steps were applied based on country-specific characteristics. These variations are documented in config.yaml and implemented in preprocess.py. 
-* India: Hinglish stopwords were removed
-* Nepal: Nepali stopwords were removed
-* --- finish ---
+* India: Hinglish stopwords were removed, nltk tokenizer specified
+* Nepal: Nepali stopwords were removed, special characters were added in the stopwords list, nltk tokenizer specified
+* Mexico: Spanish stopwords were removed, nltk tokenizer specified
 
 _These preprocessing steps were taken to ensure that stopwords and special characters were processed properly by the model, especially given the language and that they were avoided to be there as representative terms_
 
