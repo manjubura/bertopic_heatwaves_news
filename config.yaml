@@ -75,7 +75,7 @@ UK:
     min_dist: 0.0
     metric: "cosine"
   hdbscan_params:
-    min_cluster_size: 30
+    min_cluster_size: 50
     metric: "euclidean"
     cluster_selection_method: "eom"
   vectorizer_params:
@@ -87,7 +87,7 @@ UK:
     language: "english"
     top_n_words: 10
     n_gram_range: [1,1]
-    min_topic_size: 30
+    min_topic_size: 50
     nr_topics: null
  US: 
   embedding_model: "all-MiniLM-L6-v2"
